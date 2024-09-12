@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "4aa4dfe4-152e-4e8f-92c2-94d5ca6b53c1",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5169326"
+	},
+	"item": [
+		{
+			"name": "allBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/books",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allAuthors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/authors",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUniqueBook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/books/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"You Don't Know JS: Scope & Closures\",\n    \"publishingHouse\": \"O'Reilly Media\",\n    \"price\": 90,\n    \"pages\": 98,\n    \"author\": \"66e1dc8669493bac67246c25\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/books",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addAuthor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    // \"title\": \"You Don't Know JS: Scope & Closures\",\n    \"name\": \"O Poeteiro\",\n    \"nationality\": \"Brasileiro\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/authors",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"You Don't Know JS: Scope & Closures - del\",\n    \"price\": 200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/books/66df555b58ef681a736ecb68",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books",
+						"66df555b58ef681a736ecb68"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editAuthor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    // \"name\": \"O Poeteiro Poeta\",\n    \"nationality\": \"Peruano\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/authors/66e1dc9969493bac67246c27",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"authors",
+						"66e1dc9969493bac67246c27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/books/66e1dbe369493bac67246c1e",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books",
+						"66e1dbe369493bac67246c1e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAuthor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/authors/66e1dbe369493bac67246c1e",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"authors",
+						"66e1dbe369493bac67246c1e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
