@@ -2,7 +2,7 @@
 
   
 
-Este é o repositório de uma aplicação node. Aqui você encontrará as instruções para configurar o ambiente de desenvolvimento localmente e também como construir e rodar a aplicação usando Docker.
+Este é o repositório de uma aplicação node. Aqui você encontrará as instruções para configurar o ambiente de desenvolvimento.
 
 ## Requisitos
 
