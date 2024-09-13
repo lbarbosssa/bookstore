@@ -13,6 +13,8 @@ Este é o repositório de uma aplicação node. Aqui você encontrará as instru
 
 - nodemon (opcional)
 
+- docker (opcional)
+
   
 ## Instalação
 
@@ -49,7 +51,20 @@ nodemon server.js
 node server.js
 ```
 
+## Inicie a aplicação com Docker
+Construa a imagem 
+```bash
+docker build -t bookstore .
+```
+
+Execute o contêiner 
+```bash
+docker run -d -p 3000:3000 --name bookstore-container bookstore
+```
+
 Em qualquer um dos casos, a url da aplicação estará disponível em **localhost:3000**
+
+_Não se esqueça de criar o arquivo .env na raiz do projeto_
 
 ## Collection do Postman
 Todos os endpoints estaram disponiveis na collection do postman **Bookstore.postman_collection.json** na raiz do projeto, importe e seja feliz (:
