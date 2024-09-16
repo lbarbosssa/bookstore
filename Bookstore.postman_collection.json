@@ -199,6 +199,30 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "searchBypublishingHouse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/books/search?publishingHouse=Som Brasil",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "publishingHouse",
+							"value": "Som Brasil"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
